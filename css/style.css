@@ -1,0 +1,40 @@
+#console {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    width: 800px;
+    height: 600px;
+}
+
+#console-header {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid;
+}
+
+#console-body {
+    border: 2px solid;
+}
+
+#console-window {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 460px;
+    resize: none;
+}
+
+#console-command-pane {
+    display: flex;
+    padding: 5px;
+}
+#console-command-input {
+    width: 700px;
+}
+#console-command-submit {
+    margin-top: 4px;
+    height: 28px;
+}
