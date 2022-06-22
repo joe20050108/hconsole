@@ -1,36 +1,30 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Administrator Options</title>
-        <link rel="stylesheet" href="css/admin.css">
+        <title>Joe's Console</title>
+        <link id="theme-css" rel="stylesheet" href="Microsoft.WinJS.3.0/css/ui-dark.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="jsconsole/bin/jsconsole.js"></script>
+        <script src="script.js"></script>
+        <script src="app/print-color.js"></script>
+        <script src="app/style-console.js"></script>
+        <script src="app/mr-theme.js"></script>
     </head>
     <body>
-        <div id="desktop" class="desktop">
-            <div id="desktopTitle" class="desktopTitle">
-                <a id="deskTitle" style="margin-left: 10%; font-family: 'Segoe UI'; font-size: 60px;">DeskUI(NonUI)</a>
+        <button id="startCmd" onclick="boot()">Start</button>
+        <button onclick="jsconsole.commands.core.clear()">Clear Screen</button>
+        <button onclick="jsconsole.commands.core.print('Hello, World!')">Print Hello, World!</button>
+        <div id="console">
+            <div id="console-header">
+                <h1>Console</h3>
             </div>
-            <textarea id="outputWindow">Output:</textarea>
-            <input type="text" class="input" id="inputCommand">
-            <input type="text" class="input" id="param1">
-            <input type="text" class="input" id="param2">
-            <input type="text" class="input" id="param3">
-            <input type="text" class="input" id="param4">
-            <input type="text" class="input" id="param5">
-            <input type="text" class="input" id="param6">
-            <input type="text" class="input" id="param7">
-            <input type="text" class="input" id="param8">
-            <input type="text" class="input" id="param9">
-            <button id="submitButton">Submit</button>
+            <div id="console-body">
+                <textarea id="console-window"></textarea>
+                <div id="console-command-pane">
+                    <input type="text" id="console-command-input">
+                    <button id="console-command-submit">Submit</button>
+                </div>
+            </div>
         </div>
     </body>
-    <script type="text/javascript" src="../../shared/js/registry.js"></script>
-    <script type="text/javascript" src="js/appKit/appKit.js"></script>
-    <script type="text/javascript" src="js/appKit/errorSystem.js"></script>
-    <script type="text/javascript" src="js/appKit/elementMaker.js"></script>
-    <script type="text/javascript" src="js/appKit/grabElement.js"></script>
-    <script type="text/javascript" src="js/appKit/applicationInfo.js"></script>
-    <script type="text/javascript" src="js/appKit/appender.js"></script>
-    <script type="text/javascript" src="js/appKit/applications/testKit.js"></script>
-    <script type="text/javascript" src="js/application.js"></script>
-    <script type="text/javascript" src="js/appKit/appLoader.js"></script>
 </html>
