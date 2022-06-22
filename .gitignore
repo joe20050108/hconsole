@@ -1,1 +1,6 @@
-jsconsole/
+jsconsole/node_modules
+jsconsole/source
+jsconsole/.gitignore
+jsconsole/gruntfile.js
+jsconsole/package-lock.json
+jsconsole/package.json
